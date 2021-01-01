@@ -9,8 +9,16 @@
 </head>
 <body>
     <div class="container">
-        <h1 id="main-header">Blog Posts</h1>
+        <h1 class="main-header">Blog Posts</h1>
         {{{body}}}
+        <h1 class="main-header">New Post</h1>
+        <form action="/posted" method="post">
+            <label for="name">Author</label>
+            <input name="name" type="text" placeholder="Your Name...">
+            <label for="post">Write Your Post</label>
+            <textarea name="post" cols="30" rows="10" placeholder="Your Post..." value="" style="resize: none"></textarea>
+            <input class="btn" type="submit" value="Post">
+        </form>
     </div>
 </body>
 </html>

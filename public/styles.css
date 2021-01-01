@@ -2,14 +2,33 @@ body{
     background-color: lightcoral;
     margin: 0;
     padding: 0;
+    font: 16px Courier;
+    line-height: 1.6em;
 }
 .container{
     width: 60%;
     margin: auto;
 }
-#main-header{
+.btn{
+    background: #fff;
+    color: lightcoral;
+    border-radius: 15px;
+    transition: .5s
+}
+.btn:hover{
+    background: lightcoral;
+    color: #fff;
+    border-color: #fff;
+}
+.btn:active{
+    background: coral;
+    color: #fff;
+    border-color: #fff;
+}
+.main-header{
     color: #fff;
     text-align: center;
+    margin-right: 20px;
 }
 ul{
     list-style: none;
@@ -19,5 +38,21 @@ li{
     padding: 16px 30px;
     border: 3px solid black;
     border-radius: 15px;
+    margin-left: -30px;
     margin-bottom: 5px;
+}
+form{
+    margin: auto;
+    width: 95%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+input, textarea{
+    font: 16px Courier;
+    line-height: 1.6em;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 16px;
 }
