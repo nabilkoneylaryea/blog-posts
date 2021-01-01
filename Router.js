@@ -18,18 +18,17 @@ mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true},(err) =>
 
 // BLOG PAGE OR THE RETRIEVE IN CRUD
 router.get('/', (req, res) => {
-    const posts = PostModel.find((err, data) => {
+    const posts = PostModel.find({}).lean().exec((err, data) => {
         if (err) {
+            console.log('ERROR BELOW ------------------------------')
             console.log(err);
-            // return [];
         }
         else {
-            // console.log(data);
-            return data;
+            console.log('DATA BELOW ----------------------------')
+            console.log(data);
+            res.render('index', {posts: data});
         }
     });
-    console.log(posts);
-    res.render('index');
 });
 
 // CREATE OR POST ROUTE
