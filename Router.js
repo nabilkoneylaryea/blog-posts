@@ -18,17 +18,27 @@ mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true},(err) =>
 
 // BLOG PAGE OR THE RETRIEVE IN CRUD
 router.get('/', (req, res) => {
-    const posts = PostModel.find({}).lean().exec((err, data) => {
+    PostModel.find({}).lean().exec((err, data) => {
         if (err) {
-            console.log('ERROR BELOW ------------------------------')
+            console.log('ERROR ------------------------------')
             console.log(err);
         }
         else {
-            console.log('DATA BELOW ----------------------------')
-            console.log(data);
+            // console.log('DATA BELOW ----------------------------')
+            // console.log(data);
             res.render('index', {posts: data});
         }
     });
+    
+    // THIS SHOULD WORK BUT DOESN'T FOR SOME REASON SAYS HANDLEBARS DOESN'T HAVE ACCESS
+    // PostModel.find({}, (err, posts) => {
+    //     if(err){
+    //         console.log(err);
+    //     }
+    //     else{
+    //         res.render('index', {posts: posts});
+    //     }
+    // });
 });
 
 // CREATE OR POST ROUTE

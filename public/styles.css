@@ -50,11 +50,12 @@ li{
 }
 li:hover{
     transform: scale(1.1);
+    box-shadow: 3px 5px 10px #333;
 }
-/* li:active{
+li:active{
     transition:.15s;
     transform: translateX(-1500px);
-} */
+}
 form{
     margin: auto;
     width: 95%;
