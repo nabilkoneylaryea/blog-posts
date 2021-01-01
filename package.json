@@ -1,0 +1,18 @@
+{
+  "name": "blog-posts",
+  "version": "1.0.0",
+  "description": "a display for blog posts",
+  "main": "app.js",
+  "scripts": {
+    "start" : "node app",
+    "dev" : "nodemon app"
+  },
+  "author": "Nabil Koney-Laryea",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mongoose": "^5.11.9",
+    "nodemon": "^2.0.6"
+  }
+}
