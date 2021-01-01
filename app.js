@@ -12,7 +12,7 @@ app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 
 // SET STATIC FOLDER
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/public')));
 
 // SET UP BASIC ROUTE TO MAKE SURE EVERYTHING IS WORKING
 app.get('/', (req, res) => {
