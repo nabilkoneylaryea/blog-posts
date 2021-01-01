@@ -4,12 +4,13 @@
   "description": "a display for blog posts",
   "main": "app.js",
   "scripts": {
-    "start" : "node app",
-    "dev" : "nodemon app"
+    "start": "node app",
+    "dev": "nodemon app"
   },
   "author": "Nabil Koney-Laryea",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
     "mongoose": "^5.11.9",

@@ -30,6 +30,12 @@ body{
     text-align: center;
     margin-right: 20px;
 }
+.error-text{
+    background: red;
+    color: #fff;
+    padding: 3px;
+    font: 16px Courier;
+}
 ul{
     list-style: none;
 }
