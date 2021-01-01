@@ -9,6 +9,7 @@ newElement.className = 'error-text';
 
 button.addEventListener('click', (e) => {
     if(postBody.value === ''){
+        e.preventDefault();
         form.insertBefore(newElement, postBody);
     }
     else{

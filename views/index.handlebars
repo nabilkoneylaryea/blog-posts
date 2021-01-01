@@ -1,6 +1,6 @@
 <ul>
     {{#each posts}}
-    <li>
+    <li id={{this._id}}>
         <h2>{{this.title}}</h2>
         <h4>Author: {{this.author}}</h4>
         <h6>@ {{this.time}}</h6>
@@ -16,7 +16,7 @@
     <label for="name">Title</label>
     <input id="post-title" name="title" type="text" placeholder="Your Post Title...">
     
-    <label for="post">Write Your Post</label>
+    <label for="post">Write Your Post *</label>
     <textarea id="post-body" name="body" cols="30" rows="10" placeholder="Your Post..." value="" style="resize: none"></textarea>
     
     <input id="submit-btn" class="btn" type="submit" value="Post">

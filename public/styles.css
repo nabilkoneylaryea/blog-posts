@@ -45,8 +45,16 @@ li{
     border: 3px solid black;
     border-radius: 15px;
     margin-left: -30px;
-    margin-bottom: 5px;
+    margin-bottom: 30px;
+    transition: .8s;
 }
+li:hover{
+    transform: scale(1.1);
+}
+/* li:active{
+    transition:.15s;
+    transform: translateX(-1500px);
+} */
 form{
     margin: auto;
     width: 95%;

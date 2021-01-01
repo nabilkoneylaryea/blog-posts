@@ -52,5 +52,4 @@ router.post('/posted', (req, res) => {
 });
 
 // POSSIBLE DELETE ROUTE
-
 module.exports = router;
